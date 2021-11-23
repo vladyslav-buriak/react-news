@@ -1,0 +1,77 @@
+[debug] [2021-11-23T16:34:53.795Z] ----------------------------------------------------------------------
+[debug] [2021-11-23T16:34:53.797Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Админ\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-23T16:34:53.797Z] CLI Version:   9.23.0
+[debug] [2021-11-23T16:34:53.797Z] Platform:      win32
+[debug] [2021-11-23T16:34:53.797Z] Node Version:  v14.17.3
+[debug] [2021-11-23T16:34:53.798Z] Time:          Tue Nov 23 2021 18:34:53 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2021-11-23T16:34:53.799Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-23T16:34:53.806Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-23T16:34:53.806Z] > authorizing via signed-in user (vladka910@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Админ\OneDrive\Рабочий стол\news app\news_app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-11-23T16:35:53.200Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-23T16:35:53.201Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-23T16:35:53.463Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 23 Nov 2021 16:35:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-23T16:35:53.474Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"create-react-app-0970018384","name":"news-app"}
+[debug] [2021-11-23T16:35:54.427Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 23 Nov 2021 16:35:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=766","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-23T16:35:54.429Z] > refreshing access token with scopes: []
+[debug] [2021-11-23T16:35:54.429Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-23T16:35:54.570Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 23 Nov 2021 16:35:54 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-23T16:35:54.582Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 [none]
+[debug] [2021-11-23T16:35:55.526Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 200
+[debug] [2021-11-23T16:35:55.526Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 {"name":"operations/cp.8082375798350779906"}
+[debug] [2021-11-23T16:35:56.028Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-11-23T16:35:56.028Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 [none]
+[debug] [2021-11-23T16:35:56.955Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 200
+[debug] [2021-11-23T16:35:56.955Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 {"name":"operations/cp.8082375798350779906","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2021-11-23T16:35:57.962Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-11-23T16:35:57.963Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 [none]
+[debug] [2021-11-23T16:35:58.906Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 200
+[debug] [2021-11-23T16:35:58.906Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8082375798350779906 {"name":"operations/cp.8082375798350779906","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"724710910892","projectId":"create-react-app-0970018384","lifecycleState":"ACTIVE","name":"news-app","createTime":"2021-11-23T16:35:54.139Z"}}
+[debug] [2021-11-23T16:35:58.908Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-23T16:35:58.908Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-23T16:35:59.047Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 23 Nov 2021 16:35:58 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-23T16:35:59.058Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/create-react-app-0970018384:addFirebase  
+ 
+[debug] [2021-11-23T16:35:59.839Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 23 Nov 2021 16:35:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-23T16:35:59.839Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-11-23T16:35:59.840Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-11-23T16:35:59.966Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Админ\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Админ\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Админ\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (C:\Users\Админ\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (C:\Users\Админ\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:481:28)
+    at IncomingMessage.emit (events.js:387:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

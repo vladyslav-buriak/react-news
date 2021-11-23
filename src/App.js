@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./Components/AppRouter";
+import { AuthContext } from "./context";
+import { useEffect, useState } from "react";
+import CssBaseline from '@mui/material/CssBaseline';
+
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("loggedin")) {
+      setIsAuth(true);
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContext.Provider value={{ isAuth, setIsAuth }}>
+      <Router>
+      <CssBaseline />
+        <div className="App">
+          <Header />
+          <AppRouter />
+        </div>
+      </Router>
+    </AuthContext.Provider>
   );
 }
 
